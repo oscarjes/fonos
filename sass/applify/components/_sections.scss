@@ -200,7 +200,7 @@
 	}
     &.action-section-simple{
         & .actions{
-            margin-top: 2rem;
+						margin-top: 2rem;
 			@include media-breakpoint-up(md) {
                 margin-top: 0;
             }
