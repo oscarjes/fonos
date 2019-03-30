@@ -175,6 +175,9 @@
 	}
 	& .footer-bg {
 		padding: 16rem 0 8rem 0;
+		@include media-breakpoint-down(md) {
+			padding: 4rem 0 4rem 0;
+		}	
 	}
 	&::after {
 		display: block;

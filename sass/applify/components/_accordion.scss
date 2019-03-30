@@ -5,6 +5,9 @@
 
 .ui-accordion-panel {
 	margin-bottom: 2rem;
+	@include media-breakpoint-down(md) {
+		margin-bottom: 0;
+	}	
 }
 .ui-accordion {
 	margin-bottom: 1rem;

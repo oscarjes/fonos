@@ -14225,6 +14225,12 @@ body[data-fade_in="on-load"],
   margin-bottom: 2rem;
 }
 
+@media (max-width: 991px) {
+  .ui-accordion-panel {
+    margin-bottom: 0;
+  }
+}
+
 .ui-accordion {
   margin-bottom: 1rem;
   backface-visibility: hidden;
@@ -14792,6 +14798,12 @@ body[data-fade_in="on-load"],
 
 .ui-footer.ui-waves .footer-bg {
   padding: 16rem 0 8rem 0;
+}
+
+@media (max-width: 991px) {
+  .ui-footer.ui-waves .footer-bg {
+    padding: 4rem 0 4rem 0;
+  }
 }
 
 .ui-footer.ui-waves::after {
@@ -15450,6 +15462,15 @@ body[data-fade_in="on-load"],
   margin-bottom: 2rem;
 }
 
+@media (max-width: 991px) {
+  .ui-icon-blocks .ui-icon-block {
+    margin-bottom: 3rem;
+  }
+  .ui-icon-blocks .ui-icon-block:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .ui-icon-blocks .ui-icon-block p {
   display: inline-block;
   max-width: 360px;
@@ -16088,20 +16109,29 @@ body.modal-open {
 }
 
 @media (max-width: 991px) {
-  .section.ui-showcase-section div[class^="col-"]:nth-child(1) img, .section.ui-showcase-section div[class*=" col-"]:nth-child(1) img {
+  .section {
+    padding: 6rem 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .section.ui-showcase-section div[class^="col-"]:nth-child(1) img,
+  .section.ui-showcase-section div[class*=" col-"]:nth-child(1) img {
     float: right;
     margin-right: -4rem;
   }
 }
 
 @media (min-width: 992px) {
-  .section.ui-showcase-section div[class^="col-"]:nth-child(2), .section.ui-showcase-section div[class*=" col-"]:nth-child(2) {
+  .section.ui-showcase-section div[class^="col-"]:nth-child(2),
+  .section.ui-showcase-section div[class*=" col-"]:nth-child(2) {
     padding-left: 2rem;
   }
 }
 
 @media (min-width: 1200px) {
-  .section.ui-showcase-section div[class^="col-"]:nth-child(2), .section.ui-showcase-section div[class*=" col-"]:nth-child(2) {
+  .section.ui-showcase-section div[class^="col-"]:nth-child(2),
+  .section.ui-showcase-section div[class*=" col-"]:nth-child(2) {
     padding-left: 0;
   }
 }
@@ -16121,11 +16151,23 @@ body.modal-open {
   margin-bottom: 1rem;
 }
 
+@media (max-width: 991px) {
+  .section .section-heading .heading {
+    line-height: 1.3;
+  }
+}
+
 .section .section-heading .paragraph {
   display: inline-block;
   max-width: 500px;
   font-size: 1.1rem;
   margin-bottom: 1rem;
+}
+
+@media (max-width: 991px) {
+  .section .section-heading .paragraph {
+    line-height: 1.2;
+  }
 }
 
 .section .section-heading.center {
@@ -16137,19 +16179,22 @@ body.modal-open {
 }
 
 @media (min-width: 481px) {
-  .section .section-heading .heading, .section .section-heading .paragraph {
+  .section .section-heading .heading,
+  .section .section-heading .paragraph {
     margin-bottom: 1.25rem;
   }
 }
 
 @media (min-width: 740px) {
-  .section .section-heading .heading, .section .section-heading .paragraph {
+  .section .section-heading .heading,
+  .section .section-heading .paragraph {
     margin-bottom: 1.5rem;
   }
 }
 
 @media (min-width: 992px) {
-  .section .section-heading .heading, .section .section-heading .paragraph {
+  .section .section-heading .heading,
+  .section .section-heading .paragraph {
     margin-bottom: 1.75rem;
   }
 }
@@ -16166,7 +16211,7 @@ body.modal-open {
 
 .section.bg-overlay::before {
   display: block;
-  content: '';
+  content: "";
   opacity: 0.8;
   position: absolute;
   top: 0;
@@ -16183,7 +16228,7 @@ body.modal-open {
 
 .section.waves-layer::after {
   display: block;
-  content: '';
+  content: "";
   position: absolute;
   bottom: -1px;
   left: -25%;
@@ -16222,14 +16267,20 @@ body.modal-open {
   z-index: 0;
 }
 
+@media (max-width: 991px) {
+  .ui-action-section.ui-section-tilt {
+    padding: 10rem 0 16rem 0;
+  }
+}
+
 .ui-action-section.ui-section-tilt::before, .ui-action-section.ui-section-tilt::after {
   display: block;
-  content: '';
+  content: "";
   position: absolute;
   left: -8rem;
   right: -8rem;
   height: 16rem;
-  background-color: #FFF;
+  background-color: #fff;
   -webkit-transform: rotate(-10deg);
   transform: rotate(-10deg);
   z-index: -1;
@@ -16259,7 +16310,7 @@ body.modal-open {
 
 @media (max-width: 991px) {
   .ui-action-section.ui-section-tilt {
-    margin: -8rem 0 0 0;
+    margin: -8rem 0 4rem 0;
   }
 }
 

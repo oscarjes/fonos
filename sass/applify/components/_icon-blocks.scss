@@ -8,6 +8,12 @@
 	& .ui-icon-block {
 		position: relative;
 		margin-bottom: 2rem;
+		@include media-breakpoint-down(md) {
+			margin-bottom: 3rem;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
 		& p {
 			display: inline-block;
 			max-width: 360px;
